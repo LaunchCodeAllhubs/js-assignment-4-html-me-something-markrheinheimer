@@ -1,1 +1,174 @@
-/* Write your CSS here! */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0px;
+  display: block;
+  margin-bottom: 125px;
+  background: linear-gradient(
+    140deg,
+    rgb(234, 234, 234),
+    rgb(137, 137, 137),
+    rgb(231, 231, 231),
+    rgb(137, 137, 137)
+  );
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50vh;
+}
+
+#mainHeading {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: red;
+}
+
+.funParagraph {
+  color: green;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:visited {
+  color: rgb(98, 88, 0);
+}
+
+p {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+img {
+  margin: 0;
+  width: 700px;
+  height: 500px;
+  transition: opacity 12s ease;
+}
+
+img:hover {
+  opacity: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  font-size: 28px;
+  line-height: 1.9;
+  list-style: none;
+  text-align: center;
+  color: black;
+}
+
+.car-icon {
+  margin-top: 100px;
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  transform: translateX(-100%);
+  animation: moveCar 3s infinite;
+}
+
+.car-container {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+}
+
+@keyframes moveCar {
+  0% {
+    transform: translatex(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+footer {
+  padding-top: 100px;
+}
+
+article {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 320px;
+  margin-top: 320px;
+}
+
+article:first-of-type {
+  margin-top: 100px;
+}
+
+article:last-of-type {
+  margin-bottom: 120px;
+}
+
+#mazda626,
+#mazda323,
+#fordexplorer {
+  font-size: 38px;
+  color: rgb(77, 77, 77);
+}
+
+#mazda626a {
+  font-size: 38px;
+  color: green;
+}
+
+#dodgeram {
+  font-size: 38px;
+  font-weight: 700;
+  color: rgb(255, 255, 0);
+}
+
+#fordexpedition {
+  font-size: 38px;
+  color: black;
+}
+
+#minicooper,
+#fordtransit {
+  font-size: 38px;
+  color: white;
+}
+
+.mazda626.noshow,
+.mazda323.noshow,
+.fordexplorer.noshow,
+.mazda626a.noshow,
+.dodgeram.noshow,
+.fordexpedition.noshow,
+.minicooper.noshow,
+.fordtransit.noshow {
+  transform: translatex(-100%);
+}
